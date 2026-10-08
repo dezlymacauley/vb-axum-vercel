@@ -1,3 +1,5 @@
 # Build Output
 /target/
+
+# Vercel Deployment
 .vercel
