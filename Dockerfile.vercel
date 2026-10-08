@@ -12,6 +12,6 @@ COPY . .
 RUN cargo build --release
 
 FROM gcr.io/distroless/cc-debian12:nonroot
-COPY --from=build /app/target/release/vercel-docker-rust /usr/local/bin/server
+COPY --from=build /app/target/release/vb-axum-vercel /usr/local/bin/server
 ENV PORT=80
 ENTRYPOINT ["/usr/local/bin/server"]

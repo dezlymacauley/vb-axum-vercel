@@ -1,5 +1,5 @@
 [package]
-name = "vercel-docker-rust"
+name = "vb-axum-vercel"
 version = "0.1.0"
 edition = "2024"
 
