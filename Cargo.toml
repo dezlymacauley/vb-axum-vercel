@@ -3,4 +3,24 @@ name = "vercel-docker-rust"
 version = "0.1.0"
 edition = "2024"
 
+#______________________________________________________________________________
+
 [dependencies]
+
+axum = "0.8.9"
+
+serde = { 
+    version = "1.0.229", 
+    features = ["derive"] 
+}
+
+tokio = { 
+    version = "1.53.2", 
+    features = ["macros", "net", "rt-multi-thread", "signal"] 
+}
+#______________________________________________________________________________
+
+[profile.release]
+strip = true
+lto = "thin"
+#______________________________________________________________________________

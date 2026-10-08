@@ -4,4 +4,5 @@ clean = "cargo clean"
 run = "cargo run --quiet"
 
 [tools]
+node = "lts"
 vercel = { version = "latest", allow_builds = ["esbuild"], trust_policy_excludes = ["undici"] }
